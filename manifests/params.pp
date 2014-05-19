@@ -2,7 +2,7 @@ class locales::params {
   case $::operatingsystem {
     /(Ubuntu|Debian)/: {
       $package = 'locales'
-      $default_locale = 'C'
+      $default_locale = 'en_US.UTF-8 UTF-8'
       $config_file = '/etc/locale.gen'
       $default_file = '/etc/default/locale'
       $locale_gen_cmd = '/usr/sbin/locale-gen'
